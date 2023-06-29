@@ -1,0 +1,22 @@
+<div id="<%= dom_id book %>">
+  <p>
+    <strong><%= t 'books.title' %>:</strong>
+    <%= book.title %>
+  </p>
+
+  <p>
+    <strong><%= t 'books.memo' %>:</strong>
+    <%= book.memo %>
+  </p>
+
+  <p>
+    <strong><%= t 'books.author' %>:</strong>
+    <%= book.author %>
+  </p>
+
+  <p>
+    <strong>Picture:</strong>
+    <%= image_tag(book.picture_url) if book.picture.present? %>
+  </p>
+
+</div>
